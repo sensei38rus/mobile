@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">RandomMovie</string>
+    <string name="next">Next movie</string>
+    <string name="reset">Reset</string>
+    <string name="empty">A movie will appear here</string>
+    <string name="no_more">No more movies!</string>
+    <string-array name="movies">
+        <item>Gladiator</item>
+        <item>Thor 2</item>
+        <item>Rope</item>
+        <item>Bone Tomahawk</item>
+        <item>Goal 2</item>
+        <item>Transformers</item>
+        <item>The judge</item>
+        <item>Lego Movie</item>
+    </string-array>
+</resources>

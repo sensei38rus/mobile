@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">RandomMovie</string>
+    <string name="next">Следующий фильм</string>
+    <string name="reset">Начать заново</string>
+    <string name="empty">Здесь появится фильм</string>
+    <string name="no_more">Фильмы закончились!</string>
+    <string-array name="movies">
+        <item>Гладиатор</item>
+        <item>Тор 2 Царство тьмы</item>
+        <item>Веревка</item>
+        <item>Костяной томагавк</item>
+        <item>Гол 2</item>
+        <item>Трансформеры</item>
+        <item>Судья</item>
+        <item>Лего фильм</item>
+    </string-array>
+</resources>
