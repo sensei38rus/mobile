@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <!-- 1. Кнопка сверху -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Нажми на меня"
+        android:onClick="onChangePictureClick"/>
+
+    <!-- 2. Картинка посередине -->
+    <!-- Чтобы картинка занимала оставшееся место и была по центру, можно использовать layout_weight -->
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:scaleType="centerInside" />
+
+    <!-- 3. Спиннер снизу -->
+    <!-- Параметр layout_gravity="bottom" прижмет его к низу экрана -->
+    <Spinner
+        android:id="@+id/pictures_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="bottom" />
+
+</LinearLayout>
