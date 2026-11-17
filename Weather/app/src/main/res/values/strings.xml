@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="api_key">28bcfb3e2cdfd3eeac38e750d5ce9c39</string>
+    <string name="default_city">Irkutsk</string>
+
+    <!-- Тексты для UI -->
+    <string name="temp_format">%1$.1f°C</string>
+    <string name="feels_like_format">Ощущается как %1$.1f°C</string>
+    <string name="humidity_format">Влажность: %1$d%%</string>
+    <string name="wind_format">Ветер: %1$.1f м/с</string>
+    <string name="error_network">Нет соединения с сетью</string>
+    <string name="error_empty">Пустой ответ сервера</string>
+    <string name="error_http">Ошибка сервера: %1$d</string>
+    <string name="error_parse">Не удалось разобрать ответ</string>
+
+    <string-array name="cities">
+        <item>Irkutsk</item>
+        <item>Moscow</item>
+        <item>Saint Petersburg</item>
+        <item>Novosibirsk</item>
+        <item>Yekaterinburg</item>
+        <item>Kazan</item>
+        <item>Sochi</item>
+        <item>Vladivostok</item>
+    </string-array>
+</resources>

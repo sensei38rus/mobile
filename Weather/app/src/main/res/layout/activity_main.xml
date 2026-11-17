@@ -1,0 +1,72 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable name="weather" type="com.example.weatherapp.WeatherUi" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <Spinner
+            android:id="@+id/spinnerCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:entries="@array/cities" />
+
+        <TextView
+            android:id="@+id/tvCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{weather.city}"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{weather.tempText}"
+            android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{weather.description}" />
+
+        <TextView
+            android:id="@+id/tvFeelsLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{weather.feelsLikeText}" />
+
+        <TextView
+            android:id="@+id/tvHumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{weather.humidityText}" />
+
+        <TextView
+            android:id="@+id/tvWind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{weather.windText}" />
+
+        <ImageView
+            android:id="@+id/ivClouds"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/ic_clouds_cloudy"
+            android:contentDescription="@string/app_name" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Обновить"
+            android:onClick="onClick" />
+    </LinearLayout>
+</layout>
